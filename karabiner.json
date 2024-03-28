@@ -326,13 +326,15 @@
                         "description": "q to Command",
                         "manipulators": [
                             {
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
+                                "conditions": [
+                                    {
+                                        "name": "semicolon_val",
+                                        "type": "variable_if",
+                                        "value": 0
                                     }
+                                ],
+                                "from": {
+                                    "key_code": "q"
                                 },
                                 "to": [
                                     {
@@ -913,7 +915,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "a",
+                                    "key_code": "e",
                                     "modifiers": {
                                         "mandatory": "left_option"
                                     }
@@ -1077,6 +1079,12 @@
                                     }
                                 },
                                 "to": [
+                                    {
+                                        "key_code": "j",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    },
                                     {
                                         "set_variable": {
                                             "name": "obs_control_j_val",
@@ -1246,19 +1254,38 @@
                                         }
                                     }
                                 ],
-                                "to_delayed_action": {
-                                    "to_if_invoked": [
-                                        {
-                                            "set_variable": {
-                                                "name": "colon_val",
-                                                "value": 0
-                                            }
-                                        }
-                                    ]
-                                },
                                 "to_if_alone": [
                                     {
                                         "key_code": "quote"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "colon_val",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "a"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "colon_val",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": [
+                                            "control",
+                                            "left_option",
+                                            "command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -2075,6 +2102,16 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "type": "input_source_if",
+                                        "input_sources": [
+                                            {
+                                                "language": "en"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
@@ -2094,8 +2131,43 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "input_source_if",
+                                        "input_sources": [
+                                            {
+                                                "language": "ja"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f13"
+                                    },
+                                    {
+                                        "key_code": "left_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
+                                "type": "basic"
                             }
-                        ]
+                        ],
+                        "type": "basic"
                     },
                     {
                         "description": "Change control arrow to command arrow ",
@@ -2145,7 +2217,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "o",
                                     "modifiers": {
                                         "mandatory": "left_option"
                                     }
