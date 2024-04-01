@@ -94,20 +94,20 @@ end)
 
 -- 'left alt +s'
 hs.hotkey.bind({"alt"}, "F14", function()
-    moveCursorToScreenPosition(1, 3/4)  
-    activateWindowBasedOnScreenPos(1, 3/4)
+    moveCursorToScreenPosition(2, 3/4)  
+    activateWindowBasedOnScreenPos(2, 3/4)
 end)
 
 -- 'left alt +d'
 hs.hotkey.bind({"alt"}, "F15", function()
-    moveCursorToScreenPosition(2, 1/4)  
-    activateWindowBasedOnScreenPos(2, 1/4)
+    moveCursorToScreenPosition(1, 1/4)  
+    activateWindowBasedOnScreenPos(1, 1/4)
 end)
 
 -- 'left alt + f'
 hs.hotkey.bind({"alt"}, "F16", function()
-    moveCursorToScreenPosition(2, 3/4) 
-    activateWindowBasedOnScreenPos(2, 3/4)
+    moveCursorToScreenPosition(1, 3/4) 
+    activateWindowBasedOnScreenPos(1, 3/4)
 end)
 
 -- 'left alt + e'
