@@ -1,0 +1,283 @@
+{
+  // "python.pythonPath": "/usr/bin/python3",
+  "python.pythonPath": "/usr/bin/python3",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "python.linting.pycodestyleEnabled": true,
+  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  // "terminal.integrated.shell.windows": "C:\\Users\\yoshi\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+  "files.autoGuessEncoding": true,
+  "vim.digraphs": {},
+  "vim.handleKeys": {
+    "<c-d>": true
+  },
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "0"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "1",
+        "5",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "1",
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "0"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "1",
+        "5",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "1",
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "<space>"
+      ],
+      "after": [
+        "/"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "2",
+        "s",
+        "<char>",
+        "<char>"
+      ]
+    },
+    {
+      "before": [
+        "<C-o>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.navigateBack"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-i>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.navigateForward"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "g",
+        "b"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "1",
+        "0",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "1",
+        "0",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "1",
+        "0",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "g",
+        "b"
+      ]
+    }
+  ],
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "0",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "F:\\プログラミング関係\\vscode\\vscode_settings\\zenhan\\bin\\zenhan.exe 0",
+  "vim.autoSwitchInputMethod.switchIMCmd": "F:\\プログラミング関係\\vscode\\vscode_settings\\zenhan\\bin\\zenhan.exe {im}",
+  "vim.camelCaseMotion.enable": true,
+  "workbench.sideBar.location": "left",
+  "vim.useSystemClipboard": true,
+  "vim.sneak": true,
+  "vim.sneakReplacesF": true,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "files.autoSaveDelay": 100,
+  "vim.hlsearch": false,
+  "vim.leader": ",",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "rgba(0, 0, 0, 0.7)",
+  "vim.easymotionMarkerForegroundColorOneChar": "pink",
+  "vim.easymotionMarkerHeight": 24,
+  "vim.easymotionMarkerYOffset": 5,
+  "settingsSync.ignoredSettings": [],
+  "settingsSync.ignoredExtensions": [],
+  "sync.autoUpload": false,
+  "sync.gist": "3abb60cf4f1b36ff3b882ba9744e1a7c",
+  "editor.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "terminal.integrated.fontFamily": "monospace",
+  "workbench.editor.enablePreview": false,
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext"
+  ],
+  "vim.replaceWithRegister": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+  "tabnine.experimentalAutoImports": true,
+  "maven.terminal.useJavaHome": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.scrollPredominantAxis": false,
+  "editor.minimap.enabled": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.md": "default"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\yoshi\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+  "editor.acceptSuggestionOnEnter": "off",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "codetogether.userName": "test",
+  "code-runner.executorMap": {
+    "javascript": "node",
+    // "typescript": "ts-node"
+    "typescript": "node --loader ts-node/esm"
+  },
+  // 拡張子に対応するファイルタイプ
+  "files.associations": {
+    "*.tsx": "typescript"
+  },
+  "output.smartScroll.enabled": false,
+  "jupyter.experimental.debugging": true,
+  "notebook.consolidatedRunButton": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "window.zoomLevel": -1,
+  "haskell.ghcupExecutablePath": "~/.ghcup/bin/ghcup",
+  "haskell.manageHLS": "GHCup",
+  "[haskell]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "haskell.haskell"
+  },
+  "haskell.formattingProvider": "fourmolu",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "[lua]": {
+    "editor.formatOnSave": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestionsDelay": 1,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "editor.accessibilitySupport": "off"
+}
