@@ -1,0 +1,150 @@
+
+" [ 🖥️ Display ]
+"-------------------
+" 無駄な描画をしない
+set lazyredraw
+" 再描画の速度が速くなるらしいけど最近の端末では無意味との噂も..
+set ttyfast
+" 検索語をハイライト
+set hlsearch
+" コマンドのタイムラグをなくす
+set ttimeoutlen=1
+" スクロールした時 常に下に表示するバッファ行の数
+set scrolloff=5
+nnoremap j gj
+nnoremap k gk
+nnoremap J 15j
+nnoremap H ^
+nnoremap K 15k
+nnoremap L $
+vmap J 15j
+vmap H ^
+vmap K 15k
+vmap L $
+
+
+" [ 🔊 Sound ]
+"---------------
+" ベル音を鳴らさない
+set visualbell
+
+
+" [ 🔍 Search ]
+"----------------
+" 検索文字列入力時に順次対象文字列にヒットさせる
+set incsearch
+" 検索文字列が小文字の場合は大文字小文字を区別なく検索する
+set ignorecase
+" 検索時に大文字を含んでいたら大/小を区別
+set smartcase
+" (設定するとincsearchが無効になるためコメントアウト) 検索時に最後まで行っても最初に戻らない
+" set nowrapscan
+
+" [ 📁 File system ]
+"---------------------
+" swapfileなし
+set noswapfile
+" クリップボードの共有化
+set clipboard=unnamedplus
+
+" [ ⌨️ Key ]
+"-------------
+" メソッド移動
+nnoremap [m :<C-u>action MethodUp<CR>
+nnoremap ]m :<C-u>action MethodDown<CR>
+" 保存 (IDEAの自動保存と連動させるため)
+nnoremap
+
+
+" [ 🔌 Plugin ]
+"----------------
+set surround
+set commentary
+set textobj-entire
+set argtextobj
+set highlightedyank
+set textobj-indent
+set NERDTree
+
+set ReplaceWithRegister
+map _ gr
+
+set multiple-cursors
+map <C-k> <A-n>
+
+set easymotion
+nmap s <Plug>(easymotion-s2)
+map <C-S-H> :NERDTreeToggle<CR>
+
+nmap gcl gcc
+" Use ctrl-c as an ide shortcut in normal and visual modes
+" sethandler <C-C> n-v:ide i:vim
+
+nmap <S-Left> <Action>(EditorLeftWithSelection)
+nmap <S-Right> <Action>(EditorRightWithSelection)
+nmap <S-Up> <Action>(EditorUpWithSelection)
+nmap <S-Down> <Action>(EditorDownWithSelection)
+nmap <S-Home> <Action>(EditorLineStartWithSelection)
+nmap <S-End> <Action>(EditorLineEndWithSelection)
+
+imap <S-Left> <Action>(EditorLeftWithSelection)
+imap <S-Right> <Action>(EditorRightWithSelection)
+imap <S-Up> <Action>(EditorUpWithSelection)
+imap <S-Down> <Action>(EditorDownWithSelection)
+imap <S-Home> <Action>(EditorLineStartWithSelection)
+imap <S-End> <Action>(EditorLineEndWithSelection)
+
+vmap <Left> <Action>(EditorLeftWithSelection)
+vmap <Right> <Action>(EditorRightWithSelection)
+vmap <Up> <Action>(EditorUpWithSelection)
+vamp <Down> <Action>(EditorDownWithSelection)
+vmap <Home> 0
+vmap <End> $
+vmap <S-Left> <Action>(EditorLeftWithSelection)
+vmap <S-Right> <Action>(EditorRightWithSelection)
+vmap <S-Up> <Action>(EditorUpWithSelection)
+vmap <S-Down> <Action>(EditorDownWithSelection)
+vmap <S-Home> <Action>(EditorLineStartWithSelection)
+vmap <S-End> <Action>(EditorLineEndWithSelection)
+
+vmap <D-c> <Action>($Copy) <Esc>
+imap <D-c> <Esc>
+
+set selectmode=key
+set keymodel+=startsel,stopsel,stopselect
+
+sethandler <C-V> n-v:vim i:ide
+sethandler <D-c> n-v:vim
+
+
+map <D-c> <Action>($Copy) <Esc>
+imap <D-c> <Esc>
+
+set selectmode=key
+set keymodel+=startsel,stopsel,stopselect
+
+sethandler <C-V> n-v:vim i:ide
+
+map <D-c> <Action>($Copy) <Esc>
+imap <D-c> <Esc>
+
+set selectmode=key
+set keymodel+=startsel,stopsel,stopselect
+
+sethandler <C-V> n-v:vim i:ide
+
+map <D-c> <Action>($Copy) <Esc>
+imap <D-c> <Esc>
+
+set selectmode=key
+set keymodel+=startsel,stopsel,stopselect
+
+sethandler <C-V> n-v:vim i:ide
+
+map <D-c> <Action>($Copy) <Esc>
+imap <D-c> <Esc>
+
+set selectmode=key
+set keymodel+=startsel,stopsel,stopselect
+
+sethandler <C-V> n-v:vim i:ide
